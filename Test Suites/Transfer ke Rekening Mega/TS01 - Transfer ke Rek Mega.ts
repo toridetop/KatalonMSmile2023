@@ -12,34 +12,34 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>05679dc1-9686-4bd2-8e85-acc418c83f9a</testSuiteGuid>
    <testCaseLink>
-      <guid>42675bf6-ea7e-4777-a24a-6d49fa5d0763</guid>
+      <guid>8fe72af5-03fd-456e-ba54-1a3c21113f0e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TC- Transfer/Transfer ke Bank Mega/TC01 - Transfer ke Bank Mega - Data Files</testCaseId>
+      <testCaseId>Test Cases/Menu - Transfer/Submenu-Transfer ke Bank Mega/TC01 - Transfer ke Bank Mega - HitungSaldoSumberTujuan</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>ea71451d-ecde-47f5-ad3d-ae8b271ef9f2</variableId>
+         <variableId>a4ac4b4a-122b-43bd-934f-88eb1c39109a</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>5a8b6ae1-e2d3-41f1-9c04-a6c96ebed47c</variableId>
+         <variableId>a935f1ff-ffb1-417d-8e1d-70f73d7cc046</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>8b4ce6f0-23ad-4e42-a818-19f433157415</variableId>
+         <variableId>f49c7513-86b7-43d9-9dcc-1f341c271cdf</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>efd7835f-d5c1-4738-a5f0-659d47fa9f36</variableId>
+         <variableId>63dacec8-0ae8-40b1-a493-23632211222b</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

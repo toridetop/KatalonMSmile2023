@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC - Kartu Kredit Mega-OK</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4ba6b4a3-be20-4634-91f3-ceff027bbad4</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>fecfa821-a23e-493a-9575-f63213931fef</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>15000</defaultValue>
+      <description></description>
+      <id>fecfa821-a23e-493a-9575-f63213931fef</id>
+      <masked>false</masked>
+      <name>nominal</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC - Cek Host Saldo Sumber-OK</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bf513bfd-b9fc-45b3-b0bd-670236179240</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC - QRIS Terima Transfer-OK</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8f33bc12-9021-4fb4-86e3-a66d849b462b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>07c49356-3de3-42c7-a84b-9f509fe814f2</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>11111</defaultValue>
+      <description></description>
+      <id>07c49356-3de3-42c7-a84b-9f509fe814f2</id>
+      <masked>false</masked>
+      <name>nominal</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01 - Transfer ke Bank Mega - HitungSaldo</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1588b267-8a0a-496e-9e0f-4ea6ba73d77d</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ac336e81-4ac0-4c85-a636-8ea91aeeb323</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>500228ea-f0a9-464a-95d5-62bb4968c8e2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1d711b9d-3537-4b4d-a0e1-dbfc18dee462</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>15e37a3d-f294-455d-aaa7-66bc39129ad7</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'10740020456935'</defaultValue>
+      <description></description>
+      <id>ac336e81-4ac0-4c85-a636-8ea91aeeb323</id>
+      <masked>false</masked>
+      <name>RekMegaS</name>
+   </variable>
+   <variable>
+      <defaultValue>'Test UAT'</defaultValue>
+      <description></description>
+      <id>500228ea-f0a9-464a-95d5-62bb4968c8e2</id>
+      <masked>false</masked>
+      <name>Pesan</name>
+   </variable>
+   <variable>
+      <defaultValue>'10740010072570'</defaultValue>
+      <description></description>
+      <id>1d711b9d-3537-4b4d-a0e1-dbfc18dee462</id>
+      <masked>false</masked>
+      <name>RekMegaD</name>
+   </variable>
+   <variable>
+      <defaultValue>100200</defaultValue>
+      <description></description>
+      <id>15e37a3d-f294-455d-aaa7-66bc39129ad7</id>
+      <masked>false</masked>
+      <name>Nominal</name>
+   </variable>
+</TestCaseEntity>

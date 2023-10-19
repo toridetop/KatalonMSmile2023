@@ -15,14 +15,14 @@
       <guid>f64ed879-9ce9-4504-b299-35aab63879bb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TC - Login/TC01 - Login</testCaseId>
+      <testCaseId>Test Cases/Menu - Login/TC01 - Login-OK</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>a0fa7cc4-e7d7-4fe0-b900-e305f757219a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TC - QRIS/TC - QRIS</testCaseId>
+      <testCaseId>Test Cases/Menu - QRIS/TC - QRIS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
