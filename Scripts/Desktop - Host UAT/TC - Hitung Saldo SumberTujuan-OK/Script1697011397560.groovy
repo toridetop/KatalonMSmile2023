@@ -23,52 +23,62 @@ import org.openqa.selenium.Keys as Keys
 //script perhitungan penjumlahan/pengurangan saldo awal dengan nominal transaksi yg diinput user sbb:
 //script ini bisa diinsert di masing2 test case nantinya
 //String strsaldoawal = GlobalVariable.SaldoAwal
-
 String saldoawalsumberdesimal = GlobalVariable.SaldoAwalSumber
+
 def saldoawalsumberdes2 = saldoawalsumberdesimal.toDouble()
 
 String saldoakhirsumberdesimal = GlobalVariable.SaldoAkhirSumber
 
 println(GlobalVariable.NominalTrx)
-String nominaltrx1 = GlobalVariable.NominalTrx
-println(nominaltrx1)
-def nominaltrx = nominaltrx1.toDouble()
-//Nominal diatas adalah nominal trx (hardcode), bisa diganti dgn variable Nominal yg ada di test case masing2
 
+String nominaltrx1 = GlobalVariable.NominalTrx
+
+println(nominaltrx1)
+
+def nominaltrx = nominaltrx1.toDouble()
+
+//Nominal diatas adalah nominal trx (hardcode), bisa diganti dgn variable Nominal yg ada di test case masing2
 //script RUMUS perhitungan (penjumlahan/pengurangan) saldo dengan nominal trx :
 def hitungsaldosumber = saldoawalsumberdes2 - nominaltrx
+
 println(hitungsaldosumber)
 
 //script ubah format nominal menjadi 2 digit dibelakang koma, sbb :
 def saldofinalsumber = String.format('%.2f', hitungsaldosumber)
+
 println(saldofinalsumber)
 
-Mobile.verifyMatch(saldoakhirsumberdesimal, saldofinalsumber, false)
-
+Mobile.verifyMatch(saldoakhirsumberdesimal, saldofinalsumber, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 if (GlobalVariable.SaldoAwalTujuan != '') {
-	//script perhitungan dan verifikasi
-	String saldoawaltujuandesimal = GlobalVariable.SaldoAwalTujuan
-	def saldoawaltujuandes2 = saldoawaltujuandesimal.toDouble()
-	
-	String saldoakhirtujuandesimal = GlobalVariable.SaldoAkhirTujuan
-	
-	String nominaltrx3 = GlobalVariable.NominalTrx
-	def nominaltrx4 = nominaltrx3.toDouble()
-	//Nominal diatas adalah nominal trx (hardcode), bisa diganti dgn variable Nominal yg ada di test case masing2
-	
-	//script RUMUS perhitungan (penjumlahan/pengurangan) saldo dengan nominal trx :
-	def hitungsaldotujuan = saldoawaltujuandes2 + nominaltrx4
-	println(hitungsaldotujuan)
-	
-	//script ubah format nominal menjadi 2 digit dibelakang koma, sbb :
-	def saldofinaltujuan = String.format('%.2f', hitungsaldotujuan)
-	println(saldofinaltujuan)
-	
-	Mobile.verifyMatch(saldoakhirtujuandesimal, saldofinaltujuan, false)
-	
-	GlobalVariable.SaldoAwalTujuan = ''
-}else {
-	Mobile.delay(2)
-	GlobalVariable.SaldoAwalTujuan = ''
+    //script perhitungan dan verifikasi
+    String saldoawaltujuandesimal = GlobalVariable.SaldoAwalTujuan
+
+    def saldoawaltujuandes2 = saldoawaltujuandesimal.toDouble()
+
+    String saldoakhirtujuandesimal = GlobalVariable.SaldoAkhirTujuan
+
+    String nominaltrx3 = GlobalVariable.NominalTrx
+
+    def nominaltrx4 = nominaltrx3.toDouble()
+
+    //Nominal diatas adalah nominal trx (hardcode), bisa diganti dgn variable Nominal yg ada di test case masing2
+    //script RUMUS perhitungan (penjumlahan/pengurangan) saldo dengan nominal trx :
+    def hitungsaldotujuan = saldoawaltujuandes2 + nominaltrx4
+
+    println(hitungsaldotujuan)
+
+    //script ubah format nominal menjadi 2 digit dibelakang koma, sbb :
+    def saldofinaltujuan = String.format('%.2f', hitungsaldotujuan)
+
+    println(saldofinaltujuan)
+
+    Mobile.verifyMatch(saldoakhirtujuandesimal, saldofinaltujuan, false, FailureHandling.CONTINUE_ON_FAILURE)
+
+    GlobalVariable.SaldoAwalTujuan = ''
+} else {
+    Mobile.delay(2)
+
+    GlobalVariable.SaldoAwalTujuan = ''
 }
+

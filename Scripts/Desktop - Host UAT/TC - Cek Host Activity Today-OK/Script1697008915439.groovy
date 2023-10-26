@@ -29,35 +29,32 @@ Windows.setText(findWindowsObject('Object Repository/HOST UAT/Edit(1)'), 'MEGABA
 
 Windows.click(findWindowsObject('Object Repository/HOST UAT/Button'))
 
-Windows.delay(8)
+Windows.delay(1)
+
+if	(Windows.verifyElementPresent(findWindowsObject('Object Repository/HOST UAT/Button(1)'), 5, FailureHandling.OPTIONAL)){
+	
+	Windows.click(findWindowsObject('Object Repository/HOST UAT/Button(1)'))
+	Windows.delay(5)
+}
+else {
+	Windows.delay(5)
+}
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord('u4fitrii'))
 
-Windows.delay(2)
-
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.TAB))
-
-Windows.delay(2)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord('megabank'))
 
-Windows.delay(1)
-
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
 
 Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
 
-Windows.delay(1)
-
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
 
-Windows.delay(1)
-
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
-
-Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.CONTROL))
 
@@ -65,23 +62,17 @@ Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord('2'))
 
-Windows.delay(1)
-
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
 
 Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord('3'))
 
-Windows.delay(1)
-
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
 
 Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(GlobalVariable.rekMega))
-
-Windows.delay(2)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
 
@@ -91,7 +82,7 @@ Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chor
 
 Windows.delay(1)
 
-if	(Windows.verifyElementPresent(findWindowsObject('Object Repository/HOST UAT/No Trx found Text'), 5, FailureHandling.CONTINUE_ON_FAILURE)){
+if	(Windows.verifyElementPresent(findWindowsObject('Object Repository/HOST UAT/No Trx found Text'), 5, FailureHandling.OPTIONAL)){
 	
 	Windows.closeApplication()
 }
@@ -99,11 +90,7 @@ else {
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord('1'))
 
-Windows.delay(1)
-
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord('1'))
-
-Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
 
@@ -112,14 +99,18 @@ Windows.delay(1)
 String screenshotLocation1 = 'Images//ss1.png'
 WindowsActionHelper.create(WindowsDriverFactory.getWindowsSession()).takeScreenshot(screenshotLocation1)
 
+String tgl1 = new Date().format('ddMMYYYY HH.mm.ss')
+WindowsActionHelper.create(WindowsDriverFactory.getWindowsSession()).takeScreenshot('SSHost/Saldo_'+tgl1+'.png')
+
 Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
 
-Windows.delay(1)
-
 String screenshotLocation2 = 'Images//trcd.png'
 WindowsActionHelper.create(WindowsDriverFactory.getWindowsSession()).takeScreenshot(screenshotLocation2)
+
+String tgl2 = new Date().format('ddMMYYYY HH.mm.ss')
+WindowsActionHelper.create(WindowsDriverFactory.getWindowsSession()).takeScreenshot('SSHost/Saldo_'+tgl2+'.png')
 
 Windows.delay(1)
 
@@ -139,43 +130,33 @@ String trancode = trancode1.tokenize(' ')[3]
 println(trancode)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.F3))
-Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.F3))
-Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.F12))
-Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord('13'))
-Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
 Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord('3'))
-Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
 Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.TAB))
-Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.TAB))
-Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.TAB))
-Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.TAB))
-Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.TAB))
 Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(trancode+trancode))
-Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
 Windows.delay(1)
@@ -184,21 +165,33 @@ Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chor
 Windows.delay(1)
 
 //JIKA ADA LEBIH DARI 1 BARIS TELLER LOG :
-//Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ARROW_UP))
-//Windows.delay(1)
-//
-//Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord('1'+'1'))
-//Windows.delay(1)
-
-Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord('1'))
+Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ARROW_UP))
 Windows.delay(1)
+
+Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord('1'+'1'))
+Windows.delay(1)
+
+//Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord('1'))
+//
+//Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
+//Windows.delay(1)
+if	(Windows.verifyElementPresent(findWindowsObject('Object Repository/HOST UAT/Text-Cursor in protected area of display'), 5, FailureHandling.OPTIONAL)){
+	
+	Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
+	Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord('1'))
+}
+else {
+	Windows.delay(1)
+}
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
-Windows.delay(1)
 
 String screenshotLocation3 = 'Images//ss3.png'
 WindowsActionHelper.create(WindowsDriverFactory.getWindowsSession()).takeScreenshot(screenshotLocation3)
 Windows.delay(1)
+
+String tgl3 = new Date().format('ddMMYYYY HH.mm.ss')
+WindowsActionHelper.create(WindowsDriverFactory.getWindowsSession()).takeScreenshot('SSHost/Saldo_'+tgl3+'.png')
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
 Windows.delay(1)
@@ -206,6 +199,9 @@ Windows.delay(1)
 String screenshotLocation4 = 'Images//ss4.png'
 WindowsActionHelper.create(WindowsDriverFactory.getWindowsSession()).takeScreenshot(screenshotLocation4)
 Windows.delay(1)
+
+String tgl4 = new Date().format('ddMMYYYY HH.mm.ss')
+WindowsActionHelper.create(WindowsDriverFactory.getWindowsSession()).takeScreenshot('SSHost/Saldo_'+tgl4+'.png')
 
 Windows.closeApplication()
 }

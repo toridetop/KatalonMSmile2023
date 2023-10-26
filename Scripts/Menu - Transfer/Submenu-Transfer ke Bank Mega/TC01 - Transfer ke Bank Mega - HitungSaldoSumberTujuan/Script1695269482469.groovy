@@ -54,6 +54,8 @@ Mobile.startExistingApplication('com.bankmega.msmiledev')
 //
 //Mobile.delay(2)
 
+Mobile.takeScreenshot()
+
 Mobile.tap(findTestObject('Menu Transfer/Transfer ke Bank Mega/1. Button - Transfer'), 0)
 
 Mobile.delay(1)
@@ -62,13 +64,15 @@ Mobile.takeScreenshot()
 
 Mobile.tap(findTestObject('Menu Transfer/Transfer ke Bank Mega/2. Button - Transfer ke Bank Mega'), 0)
 
-Mobile.delay(2)
+Mobile.delay(1)
+
+Mobile.setText(findTestObject('Menu Transfer/Transfer ke Bank Mega/Input NomorRekBaru'), GlobalVariable.rekening, 0)
 
 Mobile.takeScreenshot()
 
-Mobile.setText(findTestObject('Menu Transfer/Transfer ke Bank Mega/Input NomorRekBaru'), GlobalVariable.rekMegaS, 0)
-
 Mobile.tap(findTestObject('Menu Transfer/Transfer ke Bank Mega/4. Button - Ok'), 0)
+
+Mobile.delay(1)
 
 String nominal = Nominal
 
@@ -88,7 +92,7 @@ Mobile.delay(4)
 
 Mobile.setText(findTestObject('Menu Transfer/Transfer ke Bank Mega/Input M-PIN'), GlobalVariable.mpin, 0)
 
-Mobile.delay(2)
+Mobile.delay(1)
 
 Mobile.takeScreenshot()
 
@@ -98,9 +102,9 @@ Mobile.delay(2)
 
 Mobile.waitForElementPresent(findTestObject('Menu Transfer/Transfer ke Bank Mega/Check - Transaksi Berhasil'), 0)
 
-Mobile.takeScreenshot()
-
 Mobile.verifyElementText(findTestObject('Menu Transfer/Transfer ke Bank Mega/Check - Transaksi Berhasil'), 'Transaksi Berhasil')
+
+Mobile.takeScreenshot()
 
 int no = Nominal
 String str = String.format('%,d', no).replace(',', '.')
@@ -124,3 +128,5 @@ Mobile.callTestCase(findTestCase('Test Cases/Desktop - Host UAT/TC - Hitung Sald
 Mobile.pressBack()
 
 Mobile.pressBack()
+
+Mobile.callTestCase(findTestCase('Test Cases/Desktop - Host UAT/TC - Cek Host Activity Today-OK'), null)

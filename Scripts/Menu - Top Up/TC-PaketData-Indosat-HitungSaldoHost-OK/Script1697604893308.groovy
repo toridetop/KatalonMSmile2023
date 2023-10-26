@@ -41,8 +41,7 @@ Mobile.tap(findTestObject('Object Repository/Menu Top Up/OR-PaketData-Indosat/an
 Mobile.tap(findTestObject('Object Repository/Menu Top Up/OR-PaketData-Indosat/android.widget.CheckBox - Freedom Internet 12 GB 50.000'), 
     0)
 
-String nominal = Mobile.getText(findTestObject('Object Repository/test/android.widget.EditText - get nominal paket data'), 
-    0)
+String nominal = Mobile.getText(findTestObject('Object Repository/Menu Top Up/OR-Pulsa-Indosat/GetText-Nominal'), 0)
 
 println(nominal)
 
@@ -116,4 +115,5 @@ Mobile.callTestCase(findTestCase('Test Cases/Desktop - Host UAT/TC - Hitung Sald
 
 Mobile.pressBack()
 
+Mobile.callTestCase(findTestCase('Test Cases/Desktop - Host UAT/TC - Cek Host Activity Today-OK'), null)
 

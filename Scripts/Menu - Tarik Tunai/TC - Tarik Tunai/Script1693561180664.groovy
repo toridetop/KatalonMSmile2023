@@ -53,7 +53,7 @@ Mobile.tap(findTestObject('Object Repository/Tarik Tunai/android.widget.Button -
 
 Mobile.delay(2)
 
-Mobile.waitForElementPresent(findTestObject('Object Repository/Tarik Tunai/android.widget.TextView - Scan QRIS Berhasil'), 0)
+Mobile.waitForElementPresent(findTestObject('Object Repository/Tarik Tunai/android.widget.TextView - Scan QRIS Berhasil'), 5)
 
 Mobile.verifyElementText(findTestObject('Object Repository/Tarik Tunai/android.widget.TextView - Scan QRIS Berhasil'), 'Scan QRIS Berhasil')
 

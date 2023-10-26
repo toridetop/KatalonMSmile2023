@@ -19,7 +19,11 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.bankmega.msmiledev')
 
+Mobile.takeScreenshot()
+
 Mobile.tap(findTestObject('Object Repository/Menu Top Up/OR-Pulsa-Indosat/android.widget.Button - Top Up'), 0)
+
+Mobile.takeScreenshot()
 
 Mobile.tap(findTestObject('Object Repository/Menu Top Up/OR-Pulsa-Indosat/android.widget.Image - pulsa'), 0)
 
@@ -28,11 +32,19 @@ Mobile.tap(findTestObject('Object Repository/Menu Top Up/OR-Pulsa-Indosat/androi
 Mobile.setText(findTestObject('Object Repository/Menu Top Up/OR-Pulsa-Indosat/android.widget.EditText (1)'), '081513733316', 
     0)
 
+Mobile.takeScreenshot()
+
 Mobile.tap(findTestObject('Object Repository/Menu Top Up/OR-Pulsa-Indosat/android.widget.Button - Lanjut'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Menu Top Up/OR-Pulsa-Indosat/android.widget.EditText (2)'), 0)
+Mobile.tap(findTestObject('Object Repository/Menu Top Up/OR-Pulsa-Indosat/arrow-down Nominal'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Menu Top Up/OR-Pulsa-Indosat/android.widget.CheckBox - 25.000'), 0)
+Mobile.tap(findTestObject('Object Repository/Menu Top Up/OR-Pulsa-Indosat/Nominal - 25.000'), 0)
+
+Mobile.takeScreenshot()
+
+String nominal = Mobile.getText(findTestObject('Object Repository/Menu Top Up/OR-Pulsa-Indosat/GetText-Nominal'), 0)
+
+println(nominal)
 
 Mobile.tap(findTestObject('Object Repository/Menu Top Up/OR-Pulsa-Indosat/android.widget.Button - Lanjut (1)'), 0)
 Mobile.tap(findTestObject('Object Repository/Menu Top Up/OR-Pulsa-Indosat/android.widget.TextView'), 0)
@@ -44,6 +56,9 @@ Mobile.delay(1)
 for(int i = 0; i <= 5; i++) {
 Mobile.tapAtPosition(190, 1635)
 }
+
+Mobile.takeScreenshot()
+
 Mobile.tap(findTestObject('Object Repository/Menu Top Up/OR-Pulsa-Indosat/android.widget.Button - TOP UP (1)'), 0)
 
 Mobile.delay(1)
@@ -52,15 +67,26 @@ Mobile.waitForElementPresent(findTestObject('Object Repository/Menu Top Up/OR-Pu
 
 Mobile.verifyElementText(findTestObject('Object Repository/Menu Top Up/OR-Pulsa-Indosat/txt - Pembelian Berhasil'), 'Pembelian Berhasil')
 
+Mobile.takeScreenshot()
+
 int byadm = 1500
 String adm = String.format('%,d', byadm).replace(',', '.')
 
 Mobile.verifyElementText(findTestObject('Object Repository/Menu Top Up/OR-Pulsa-Indosat/txt biaya admin - Rp. 1.500'),"Rp. "+adm)
 
-int total = 26500
-String tot = String.format('%,d', total).replace(',', '.')
+
+int nominalint = nominal.toInteger() //merubah tipe data nominal dari string ke int
+
+int totaltopup = nominalint + byadm //perhitungan nominal paket data ditambah biaya admin
+
+println(totaltopup)
+
+String tot = String.format('%,d', totaltopup).replace(',', '.')
+
+println(tot)
+
 
 Mobile.verifyElementText(findTestObject('Object Repository/Menu Top Up/OR-Pulsa-Indosat/txt total topup - Rp. 26.500'),"Rp. "+tot)
 
-
+Mobile.callTestCase(findTestCase('Test Cases/Desktop - Host UAT/TC - Cek Host Activity Today-OK'), null)
 

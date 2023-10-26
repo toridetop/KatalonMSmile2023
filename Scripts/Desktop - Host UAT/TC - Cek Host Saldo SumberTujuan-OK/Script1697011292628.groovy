@@ -41,55 +41,37 @@ else {
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord('u4fitrii'))
 
-Windows.delay(2)
-
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.TAB))
-
-Windows.delay(2)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord('megabank'))
 
-Windows.delay(2)
+Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
+
+Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
 
-Windows.delay(2)
-
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
 
-Windows.delay(2)
-
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
-
-Windows.delay(2)
-
-Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
-
-Windows.delay(2)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.CONTROL))
 
-Windows.delay(2)
+Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord('2'))
 
-Windows.delay(2)
-
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
 
-Windows.delay(2)
+Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord('3'))
 
-Windows.delay(2)
-
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
 
-Windows.delay(2)
+Windows.delay(1)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(GlobalVariable.rekening))
-
-Windows.delay(2)
 
 Windows.sendKeys(findWindowsObject('Object Repository/HOST UAT/Pane'), Keys.chord(Keys.ENTER))
 
@@ -99,6 +81,10 @@ Windows.delay(2)
 // script take screen shot di desktop apps :
 String screenshotLocation = 'Images//01.png' 
 WindowsActionHelper.create(WindowsDriverFactory.getWindowsSession()).takeScreenshot(screenshotLocation)
+
+String tgl = new Date().format('ddMMYYYY HH.mm.ss')
+WindowsActionHelper.create(WindowsDriverFactory.getWindowsSession()).takeScreenshot('SSHost/Saldo_'+tgl+'.png')
+
 
 Windows.delay(2)
 

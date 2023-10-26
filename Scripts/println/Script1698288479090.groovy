@@ -17,38 +17,4 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('com.bankmega.msmiledev')
-
-Mobile.tap(findTestObject('Menu Login/01 Button LOGIN'), 0)
-
-Mobile.delay(1)
-
-Mobile.tapAtPosition(531, 2040)
-
-Mobile.delay(1)
-
-Mobile.tap(findTestObject('Menu Login/02 Button - Login Dengan Password  Registrasi'), 0)
-
-Mobile.delay(1)
-
-Mobile.setText(findTestObject('Menu Login/03 Input Password'), 'Bankmega1', 0)
-
-Mobile.delay(1)
-
-Mobile.takeScreenshot()
-
-Mobile.delay(1)
-
-Mobile.tap(findTestObject('Menu Login/04 Button - LOGIN'), 0)
-
-Mobile.delay(1)
-
-Mobile.takeScreenshot()
-
-Mobile.delay(1)
-
-Mobile.verifyElementNotVisible(findTestObject('Menu Login/01 Button LOGIN'), 5)
-
-Mobile.delay(1)
-
-Mobile.callTestCase(findTestCase('Test Cases/TC - BacaRekeningSumber'), null)
+println (GlobalVariable.rekening)
