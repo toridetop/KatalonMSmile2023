@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('com.bankmega.msmiledev')
+//Mobile.startExistingApplication('com.bankmega.msmiledev')
 
 Mobile.takeScreenshot()
 
@@ -88,5 +88,5 @@ println(tot)
 
 Mobile.verifyElementText(findTestObject('Object Repository/Menu Top Up/OR-Pulsa-Indosat/txt total topup - Rp. 26.500'),"Rp. "+tot)
 
-Mobile.callTestCase(findTestCase('Test Cases/Desktop - Host UAT/TC - Cek Host Activity Today-OK'), null)
+//Mobile.callTestCase(findTestCase('Test Cases/Desktop - Host UAT/TC - Cek Host Activity Today-OK'), null)
 

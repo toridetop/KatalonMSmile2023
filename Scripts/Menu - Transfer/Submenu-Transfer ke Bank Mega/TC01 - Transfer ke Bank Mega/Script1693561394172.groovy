@@ -17,25 +17,25 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('D:\\Katalon Studio\\Installer\\msmiledev_04072023_1316.protected.apk', false)
-
-Mobile.tap(findTestObject('Menu Login/01 Button LOGIN'), 0)
-
-Mobile.delay(2)
-
-Mobile.tapAtPosition(531, 2040)
-
-Mobile.delay(2)
-
-Mobile.tap(findTestObject('Menu Login/02 Button - Login Dengan Password  Registrasi'), 0)
-
-Mobile.delay(2)
-
-Mobile.setText(findTestObject('Menu Login/03 Input Password'), 'Bankmega1', 0)
-
-Mobile.delay(2)
-
-Mobile.tap(findTestObject('Menu Login/04 Button - LOGIN'), 0)
+//Mobile.startApplication('D:\\Katalon Studio\\Installer\\msmiledev_04072023_1316.protected.apk', false)
+//
+//Mobile.tap(findTestObject('Menu Login/01 Button LOGIN'), 0)
+//
+//Mobile.delay(2)
+//
+//Mobile.tapAtPosition(531, 2040)
+//
+//Mobile.delay(2)
+//
+//Mobile.tap(findTestObject('Menu Login/02 Button - Login Dengan Password  Registrasi'), 0)
+//
+//Mobile.delay(2)
+//
+//Mobile.setText(findTestObject('Menu Login/03 Input Password'), 'Bankmega1', 0)
+//
+//Mobile.delay(2)
+//
+//Mobile.tap(findTestObject('Menu Login/04 Button - LOGIN'), 0)
 
 Mobile.delay(2)
 
@@ -78,5 +78,6 @@ println(str)
 
 Mobile.verifyElementText(findTestObject('Menu Transfer/Transfer ke Bank Mega/Check Total Transfer'),"Rp. "+str)
 
+Mobile.pressBack()
 
 
