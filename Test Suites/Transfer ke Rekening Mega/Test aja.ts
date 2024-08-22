@@ -22,7 +22,7 @@
       <guid>b920d350-3f74-4032-a21e-22cc9ff5d7a8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Menu - Transfer/Submenu-Transfer ke Bank Mega/TC01 - Transfer ke Bank Mega</testCaseId>
+      <testCaseId>Test Cases/Menu - Transfer/Submenu-Transfer ke Bank Mega/TC01 - Transfer ke Bank Mega-OK</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>

@@ -1,31 +1,31 @@
 [35m[Appium][39m Welcome to Appium v1.22.2
 [35m[Appium][39m Non-default server args:
-[35m[Appium][39m   port: 59641
+[35m[Appium][39m   port: 61590
 [35m[Appium][39m   loglevel: info
-[35m[Appium][39m   tmpDir: C:\Users\08093761\AppData\Local\Temp\\Katalon\Appium\Temp1692084693083
-[35m[Appium][39m   chromedriverPort: 59642
+[35m[Appium][39m   tmpDir: C:\Users\08093761\AppData\Local\Temp\\Katalon\Appium\Temp1715143402778
+[35m[Appium][39m   chromedriverPort: 61591
 [35m[Appium][39m Deprecated server args:
 [35m[Appium][39m   [31m--chromedriver-port[39m => --default-capabilities
 [35m[Appium][39m Default capabilities, which will be added to each request unless overridden by desired capabilities:
-[35m[Appium][39m   chromedriverPort: 59642
-[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:59641
+[35m[Appium][39m   chromedriverPort: 61591
+[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:61590
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m5 ms - 68[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m8 ms - 68[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m1 ms - 68[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m2 ms - 68[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
-[35m[HTTP][39m [90m{"desiredCapabilities":{"appActivity":".Settings","appPackage":"com.android.settings","newCommandTimeout":1800,"platformVersion":"13","automationName":"uiautomator2","autoGrantPermissions":true,"platformName":"Android","udid":"RRCW5056KNR","deviceName":"samsung SM-M236B (Android 13)","platform":"ANDROID","systemPort":8294},"capabilities":{"firstMatch":[{"appium:appActivity":".Settings","appium:appPackage":"com.android.settings","appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","appium:deviceName":"samsung SM-M236B (Android 13)","appium:newCommandTimeout":1800,"platform":"ANDROID","platformName":"android","appium:platformVersion":"13","appium:systemPort":8294,"appium:udid":"RRCW5056KNR"}]}}[39m
+[35m[HTTP][39m [90m{"desiredCapabilities":{"appActivity":".Settings","appPackage":"com.android.settings","newCommandTimeout":1800,"platformVersion":"13","automationName":"uiautomator2","autoGrantPermissions":true,"platformName":"Android","udid":"RRCW5056KNR","deviceName":"samsung SM-M236B (Android 13)","platform":"ANDROID","systemPort":8263},"capabilities":{"firstMatch":[{"appium:appActivity":".Settings","appium:appPackage":"com.android.settings","appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","appium:deviceName":"samsung SM-M236B (Android 13)","appium:newCommandTimeout":1800,"platform":"ANDROID","platformName":"android","appium:platformVersion":"13","appium:systemPort":8263,"appium:udid":"RRCW5056KNR"}]}}[39m
 [35m[BaseDriver][39m The following capabilities are not standard capabilities and should have an extension prefix:
 [35m[BaseDriver][39m   platform
 [35m[BaseDriver][39m   chromedriverPort
 [35m[Appium][39m Appium v1.22.2 creating new AndroidUiautomator2Driver (v1.70.1) session
 [35m[BaseDriver][39m The following capabilities were provided, but are not recognized by Appium:
 [35m[BaseDriver][39m   platform
-[35m[BaseDriver][39m Session created with session id: f1d07444-4d63-4348-9091-25cac120a9e0
+[35m[BaseDriver][39m Session created with session id: aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5
 [35m[UiAutomator2][39m Starting 'com.android.settings' directly on the device
 [35m[ADB][39m Found 1 'build-tools' folders under 'C:\Users\08093761\.katalon\tools\android_sdk' (newest first):
 [35m[ADB][39m     C:/Users/08093761/.katalon/tools/android_sdk/build-tools/29.0.3
@@ -48,70 +48,83 @@
 [35m[WD Proxy][39m socket hang up
 [35m[WD Proxy][39m socket hang up
 [35m[WD Proxy][39m socket hang up
-[35m[WD Proxy][39m socket hang up
 [35m[WD Proxy][39m Determined the downstream protocol as 'W3C'
 [35m[AndroidDriver][39m Screen already unlocked, doing nothing
 [35m[UiAutomator2][39m Starting 'com.android.settings/.Settings and waiting for 'com.android.settings/.Settings'
-[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session f1d07444-4d63-4348-9091-25cac120a9e0 added to master session list
-[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m13104 ms - 1159[39m
+[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5 added to master session list
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m13453 ms - 1159[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0 [39m[32m200[39m [90m13 ms - 1113[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5 [39m[32m200[39m [90m34 ms - 1113[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0 [39m[32m200[39m [90m17 ms - 1113[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5 [39m[32m200[39m [90m32 ms - 1113[39m
 [35m[HTTP][39m [90m[39m
 [35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
 [35m[HTTP][39m [90m{}[39m
 [35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m1 ms - 68[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0/timeouts[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/timeouts[39m
 [35m[HTTP][39m [90m{"implicit":60000}[39m
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0/timeouts [39m[32m200[39m [90m2 ms - 14[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/timeouts [39m[32m200[39m [90m3 ms - 14[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0/screenshot[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/screenshot[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0/screenshot [39m[32m200[39m [90m499 ms - 224718[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/screenshot [39m[32m200[39m [90m1153 ms - 225392[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0/window/rect[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/window/rect[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0/window/rect [39m[32m200[39m [90m19 ms - 50[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/window/rect [39m[32m200[39m [90m35 ms - 50[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0/appium/device/system_bars[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/appium/device/system_bars[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0/appium/device/system_bars [39m[32m200[39m [90m174 ms - 145[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/appium/device/system_bars [39m[32m200[39m [90m155 ms - 145[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0/appium/device/activate_app[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/appium/device/activate_app[39m
 [35m[HTTP][39m [90m{"bundleId":"com.bankmega.msmiledev"}[39m
-[35m[HTTP][39m [37m<-- POST /wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0/appium/device/activate_app [39m[32m200[39m [90m699 ms - 14[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/appium/device/activate_app [39m[32m200[39m [90m574 ms - 14[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0/source[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/source[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[W3C (f1d07444)][39m Driver proxy active, passing request on via HTTP proxy
-[35m[WD Proxy][39m Replacing sessionId 508cfc4f-5486-4b19-834d-6a2f1acb0ac3 with f1d07444-4d63-4348-9091-25cac120a9e0
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0/source [39m[32m200[39m [90m1464 ms - 13442[39m
+[35m[W3C (aab7f01e)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 283fd3b7-f5ac-41ff-8109-49c5b3bcf464 with aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/source [39m[32m200[39m [90m907 ms - 29915[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0/screenshot[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/screenshot[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0/screenshot [39m[32m200[39m [90m389 ms - 177242[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/screenshot [39m[32m200[39m [90m1470 ms - 923988[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0/source[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/source[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[W3C (f1d07444)][39m Driver proxy active, passing request on via HTTP proxy
-[35m[WD Proxy][39m Replacing sessionId 508cfc4f-5486-4b19-834d-6a2f1acb0ac3 with f1d07444-4d63-4348-9091-25cac120a9e0
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0/source [39m[32m200[39m [90m279 ms - 33551[39m
+[35m[W3C (aab7f01e)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 283fd3b7-f5ac-41ff-8109-49c5b3bcf464 with aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/source [39m[32m200[39m [90m478 ms - 15489[39m
 [35m[HTTP][39m [90m[39m
-[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0/screenshot[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/screenshot[39m
 [35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- GET /wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0/screenshot [39m[32m200[39m [90m412 ms - 524090[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/screenshot [39m[32m200[39m [90m1100 ms - 1027416[39m
 [35m[HTTP][39m [90m[39m
-[35m[BaseDriver][39m Shutting down because we waited 1800 seconds for a command
-[35m[Appium][39m Closing session, cause was 'New Command Timeout of 1800 seconds expired. Try customizing the timeout using the 'newCommandTimeout' desired capability'
-[35m[Appium][39m Removing session 'f1d07444-4d63-4348-9091-25cac120a9e0' from our master session list
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@class = 'android.widget.TextView' and (@text = 'Pembukaan Tabungan Berhasil' or . = 'Pembukaan Tabungan Berhasil')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/elements [39m[32m200[39m [90m852 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@class = 'android.widget.TextView' and (@text = 'Rp. 500.000' or . = 'Rp. 500.000')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/elements [39m[32m200[39m [90m240 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@class = 'android.widget.TextView' and (@text = 'SENTOT ZULKARNAIN-10740021017769' or . = 'SENTOT ZULKARNAIN-10740021017769')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/elements [39m[32m200[39m [90m252 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@class = 'android.widget.Image' and (@text = 'closeBtn' or . = 'closeBtn')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5/elements [39m[32m200[39m [90m382 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[Appium][39m Removing session aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5 from our master session list
 [35m[UiAutomator2][39m Restoring hidden api policy to the device default configuration
-[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0[39m
-[35m[HTTP][39m [90m{}[39m
-[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/f1d07444-4d63-4348-9091-25cac120a9e0 [39m[33m404[39m [90m13 ms - 2444[39m
+[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/aab7f01e-9c7c-49df-9a3b-1c9c3810cbe5 [39m[32m200[39m [90m747 ms - 14[39m
 [35m[HTTP][39m [90m[39m

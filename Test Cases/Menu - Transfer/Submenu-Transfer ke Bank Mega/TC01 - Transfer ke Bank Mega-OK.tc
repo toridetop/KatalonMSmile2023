@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC01 - Transfer ke Bank Mega</name>
+   <name>TC01 - Transfer ke Bank Mega-OK</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>31ff5071-b03a-40ad-8893-9526d2e90ccc</testCaseGuid>

@@ -32,7 +32,7 @@ Mobile.tap(findTestObject('Object Repository/Menu Top Up/OR-PaketData-Indosat/an
 
 Mobile.tap(findTestObject('Object Repository/Menu Top Up/OR-PaketData-Indosat/android.widget.Image - arrow-down-jenis-paket'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Menu Top Up/OR-PaketData-Indosat/android.widget.CheckBox - Freedom Internet 12 GB 50.000'), 
+Mobile.tap(findTestObject('Object Repository/Menu Top Up/OR-PaketData-Indosat-New/View-PaketData1'), 
     0)
 
 

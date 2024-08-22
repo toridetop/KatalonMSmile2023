@@ -37,23 +37,37 @@ import org.openqa.selenium.Keys as Keys
 //
 //Mobile.tap(findTestObject('Menu Login/04 Button - LOGIN'), 0)
 
+Mobile.callTestCase(findTestCase('Test Cases/Menu - Login/TC01 - Login-OK'), null)
+
 Mobile.delay(2)
+
+Mobile.tapAtPosition(531, 2040)
+
+Mobile.delay(1)
 
 Mobile.tap(findTestObject('Menu Transfer/Transfer ke Bank Mega/1. Button - Transfer'), 0)
 
-Mobile.tap(findTestObject('Menu Transfer/Transfer ke Bank Mega/2. Button - Transfer ke Bank Mega'), 0)
+Mobile.tap(findTestObject('Object Repository/Menu Transfer/Transfer ke Bank Mega/2.ButtonNew - Transfer ke Bank Mega'), 0)
 
 Mobile.delay(2)
 
 Mobile.setText(findTestObject('Menu Transfer/Transfer ke Bank Mega/Input NomorRekBaru'), RekMegaS, 0)
 
+Mobile.delay(1)
+
 Mobile.tap(findTestObject('Menu Transfer/Transfer ke Bank Mega/4. Button - Ok'), 0)
+
+Mobile.delay(1)
 
 String nominal = Nominal
 
 Mobile.setText(findTestObject('Menu Transfer/Transfer ke Bank Mega/Input Nominal'), nominal, 0)
 
+Mobile.delay(1)
+
 Mobile.setText(findTestObject('Menu Transfer/Transfer ke Bank Mega/Input Pesan'), Pesan, 0)
+
+Mobile.delay(1)
 
 Mobile.tap(findTestObject('Menu Transfer/Transfer ke Bank Mega/7. Button - Lanjut'), 0)
 
@@ -69,7 +83,11 @@ Mobile.delay(2)
 
 Mobile.waitForElementPresent(findTestObject('Menu Transfer/Transfer ke Bank Mega/Check - Transaksi Berhasil'), 0)
 
+Mobile.delay(1)
+
 Mobile.verifyElementText(findTestObject('Menu Transfer/Transfer ke Bank Mega/Check - Transaksi Berhasil'), 'Transaksi Berhasil')
+
+Mobile.delay(1)
 
 int no = Nominal
 String str = String.format('%,d', no).replace(',', '.')
